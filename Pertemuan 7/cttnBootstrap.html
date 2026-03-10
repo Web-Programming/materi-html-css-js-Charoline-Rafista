@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+    <script>
+        //output console
+        console.log("Halo Javascript");
+        console.error("Ini pesan error");
+        console.table(["Apel","Jeruk"]); //utk tampilin array
+
+        //output dokumen = pop up window
+        // alert("Halo Javascript");
+        // var nama = prompt("Masukkan Nama Anda");
+        // console.log("Halo " + nama);
+        var isjomblo = confirm("Apakah Anda jomblo, mau lanjut?");
+if(isjomblo){
+    console.log("Cieee jomblooo");
+} else{
+    console.log("Byeee....");
+}
+
+
+    // output document = 
+    document.write("<h2>Halo...</h2>");
+    document.getElementById("demo").innerHTML="Nama saya bukan Rachmat";
+    document.getElementById("demo").innerHTM + ="<br/> Saya Mahasiswa UMDP";
+
+    //variabel
+    var nama = "cr"; //string
+    var npm = 2428240021; //number /int
+    var isFemale = true; //boolean
+    var hobi = ["Reading","Writing", "Dancing"]; //array
+    var nilaiKuliah = {"namaMK":"PAW1", "nilaiHuruf":"A", "nilaiAngka":"90"} //object
+    </script>
+</head>
+<body>
+    <h1>Ini element h1</h1>
+    <div>ini Element div</div>
+</body>
+</html>
+nb : 
+java script bisa diletakkan di atas atau di bawah
+kalo di atas, berarti gabisa akses elemen di bawah
+kalo di atas dan ada banyak yg mau ditampilkan, atau file yg ditampilkan besar, nanti loadnya lama
+
+<br> Kalau JavaScript / script dibagian atas dia akan menajalankan atau eksekusi scriptnya terlebih dahulu. baru mengakses elemen yang ada di bawah
+<br> Kalau JavaScript Dibawah dia akan Mengakses Elemen baru Script
