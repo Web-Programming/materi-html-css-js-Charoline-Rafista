@@ -1,0 +1,61 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; /* mengatur jarak tepi */
+    color: #333;
+    background-color: #c2eaf7;
+    text-align: justify;
+}
+header{
+    background-color: #9cd7f1;
+    color: rgb(135, 6, 27);
+    padding: 20px 0;
+}
+
+.logo{
+    text-align: center;
+    background-color: #1497c3;
+}
+.judul{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.alamat{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.subjudul{
+    padding: 15px 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p{
+    display:flex;
+    /* text-align: justify; */
+    /* padding: 15px 20px; */
+    margin: 0px 30px;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+th img{
+    width: 200px;
+    height: 200px;
+}
+.footer{
+    text-align: center;
+    font-size: 10px;
+}
+ header nav{
+    
+ }

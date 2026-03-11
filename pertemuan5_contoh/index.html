@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* Ini Internal CSS */
+        /* Selector Tag HTML */
+        body {
+            background-color: #f6ef2e;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+
+        div {
+            border-width: 10px;
+            border-style: dotted;
+            border-color: #000;
+        }
+
+        /* Selector Class */ 
+        .border-warna-merah {
+            border-color: #bd0303;
+        }
+        .border-warna-biru {
+            border-color: blue;
+        }
+        .border-warna-hijau {
+            border-color: green;
+        }
+        .border-spesial {
+            border: 5px solid orange;
+        }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/gayaku.css">
+</head>
+<body>
+    <h1 style="color: blue; font-size: 15pt;">Mengenal CSS Inline</h1>
+    <h1 style="color: #bd0303; font-family: Arial, Helvetica, sans-serif, serif;">Ini Text Berwana Merah</h1>
+    <h2 class="border-warna-biru" style="border-style: solid;">Mengenal Selector Pada CSS</h2>
+    <div class="border-warna-merah">
+        Hallo, apa kabar mahasiswa kelas SI4B
+    </div>
+
+    <div class="border-warna-hijau">
+        Kita bahas selector lainnya
+    </div>
+
+    <div class="border-warna-biru border-spesial">
+        Kita bahas selector lainnya ....
+    </div>
+
+</body>
+</html>
