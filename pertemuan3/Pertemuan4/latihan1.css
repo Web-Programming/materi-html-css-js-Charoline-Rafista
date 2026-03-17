@@ -1,9 +1,10 @@
+/* HEADER */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0; /* mengatur jarak tepi */
     color: #333;
     background-color: #c2eaf7;
-    text-align: justify;
+    /* text-align: justify; */
 }
 header{
     background-color: #9cd7f1;
@@ -11,51 +12,100 @@ header{
     padding: 20px 0;
 }
 
-.logo{
-    text-align: center;
-    background-color: #1497c3;
+header-img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
 }
-.judul{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+nav{
+    padding: 10px 0;
 }
-.alamat{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+nav a{
+    color: rgb(81, 57, 4);
+    text-decoration: none;
+    margin: 0 15 px;
+    font-weight: bold;
 }
-.menu{
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+nav a:hover{
+    background-color: brown;
+    color: aliceblue;
+    border-bottom: 2px solid;
 }
-.subjudul{
-    padding: 15px 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/* SEJARAH */
+.sejarah{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 10%;
+    gap: 50px;
 }
-p{
-    display:flex;
-    /* text-align: justify; */
-    /* padding: 15px 20px; */
-    margin: 0px 30px;
+
+.isi-sejarah p{
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+
+.sejarah-picture img{
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* FASILITAS */
+.fasilitas{
+    background-color: #9cd7f1;
+    padding: 50px 10%;
     text-align: center;
 }
 
-table{
+.fasilitas table{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 25px;
+    border: none;
+}
+
+.fasilitas td{
+    /* padding: 15px 20px;
+    border-radius: 15px; */
+    background-color: aquamarine;
+    /* box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3 ease; */
+}
+
+.fasilitas td:hover{
+    background-color: bisque;
+    transform: translateY(-10px);
+}
+
+.fasilitas td img{
     width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    display: block; */
 }
 
-th img{
-    width: 200px;
-    height: 200px;
-}
-.footer{
+/* STAF PENGAJAR */
+
+.staf-pengajar{
+    padding: 50px 10%;
+    background-color: azure;
     text-align: center;
-    font-size: 10px;
 }
- header nav{
-    
- }
+
+.staf-pengajar ul{
+    list-style: none;
+    padding: 0;
+    margin: 30px auto 0;
+}
+
+.staf-pengajar li {
+    background-color: #b58e8e;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
