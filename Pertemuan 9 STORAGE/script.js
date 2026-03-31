@@ -1,9 +1,9 @@
-// Fungsi untuk memuat data dari session storage dan menampilkannya
+// Fungsi untuk memuat data dari session storage dan menampilkannya ke dalam <ul>
 function displayGuest(){
-    const guestListUI = document.getElementById('guesList');
+    const guestListUI = document.getElementById('guestList');
     guestListUI.innerHTML = ''; //Reset tampilan list
 
-    // Mengambil data dari session storage, jika kosong buat array baru
+    // Mengambil data dari session storage, jika kosong buat otomatis pakai array kosong 
     let guests =JSON.parse(sessionStorage.getItem("guests")) || [];
 
     guests.forEach((guest) => {
@@ -12,10 +12,10 @@ function displayGuest(){
         guestListUI.appendChild(li);    
     });
 
-    // Fungsi untuk menambah data
+    // Fungsi untuk menambah data --> ambil input user + tambahkan ke array + simpan ke sessionStorage
     function addGuest(){
         const input = document.getElementById('guestInput');
-        const guestName = input.ariaValueMax;
+        const guestName = input.value;
         if (guestName === ''){
             alert('Nama tidak boleh kosong!');
             return;
@@ -35,7 +35,7 @@ function displayGuest(){
         displayGuest();
     }
 
-    // Fungsi untuk menghapus semua data
+    // Fungsi untuk menghapus semua data --> hapus semua data dari storage
     function ClearList(){
         if (confirm('Hapus semua data tamu di sesi ini?')){
             sessionStorage.removeItem('guests');
@@ -43,7 +43,7 @@ function displayGuest(){
         }
     }
 
-    // Jalankan fungsi display saat halaman pertama kali dimuat 
+    // Jalankan fungsi display saat halaman pertama kali dimuat / saat halaman dibuka
     window.onload = displayGuest;
 
 }
