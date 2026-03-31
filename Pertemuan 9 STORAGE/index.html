@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        localStorage.setItem("name", "Nur Rachmat"); //test comment
+        document.getElementById("demo").innerHTML = localStorage.getItem("name");
+
+        sessionStorage.setItem("name", "Rachmat Nur"); //test comment -- akan terhapus saat web browser ditutup
+        document.getElementById("demo").innerHTML = sessionStorage.getItem("name");
+
+        //lihat perbedaan cara kerja keduanya dengan memberi tanda komentar // pada set item dan membuka tutup browser
+
+        //cookie -- penyimpanan datanya berdasarkan waktu, jdi bisa hilang jika set expired, bisa dihapus manual 
+              // -- di cookie detiap data dia selalu dikirimkan ke server, jdi jngan simpan pw or appun di cookie 
+        //document.cookie = "username=Nur Rachmet Cookie;";
+    </script>
+</body>
+</html>
